@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: system-ui, sans-serif;
+  color: #222;
+}
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 16px 24px;
+  border-bottom: 1px solid #eee;
+}
+.logo {
+  font-weight: 700;
+  font-size: 20px;
+  text-decoration: none;
+  color: inherit;
+}
+.nav {
+  display: flex;
+  gap: 16px;
+  flex: 1;
+}
+.nav a {
+  text-decoration: none;
+  color: #555;
+}
+.nav a.active {
+  color: #b33;
+  font-weight: 600;
+}
+.phone {
+  margin-left: auto;
+  font-weight: 600;
+  color: inherit;
+}
+
+.hero {
+  padding: 64px 0;
+}
+.hero h1 {
+  font-size: 40px;
+  max-width: 700px;
+}
+.btn {
+  display: inline-block;
+  margin-top: 16px;
+  padding: 12px 24px;
+  background: #b33;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+  margin: 24px 0;
+}
+.card {
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 16px;
+}
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+section {
+  margin-bottom: 48px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 360px;
+}
+form input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+.footer {
+  border-top: 1px solid #eee;
+  padding: 24px;
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
