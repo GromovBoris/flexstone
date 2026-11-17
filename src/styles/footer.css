@@ -1,0 +1,61 @@
+/* ===== Футер ===== */
+.footer {
+  background: #2b2825;
+  color: #cfcac4;
+  margin-top: 3rem;
+
+  .footer-inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 2.5rem 1rem;
+  }
+
+  .footer-col p {
+    margin: 0.3rem 0;
+  }
+
+  .footer-logo {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #fff;
+  }
+
+  .footer-warranty {
+    color: #9ccc8f;
+    font-weight: 600;
+  }
+
+  .footer-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+
+    a {
+      color: inherit;
+
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+
+  .footer-disclaimer {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #8b857e;
+    padding: 0 1rem 1.25rem;
+    margin: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    padding-top: 1rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .footer .footer-inner {
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+}
