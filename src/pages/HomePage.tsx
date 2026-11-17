@@ -109,15 +109,19 @@ export default function HomePage() {
         </div>
       </section>{" "}
       {/* </div> */}
-      <section className="stats">
-        {stats.map((s) => (
-          <div className="stat" key={s.label}>
-            <div className="stat-value">{s.value}</div>
-            <div className="stat-label">{s.label}</div>
-          </div>
-        ))}
-      </section>
       <section className="section">
+        <div className="container">
+          <div className="stats">
+            {stats.map((s) => (
+              <div className="stat" key={s.label}>
+                <div className="stat-value">{s.value}</div>
+                <div className="stat-label">{s.label}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+      <section className="section section-alt">
         <div className="container">
           <h2>Почему термопанели</h2>
           <div className="cards">
@@ -130,7 +134,7 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-      <section className="section section-alt">
+      <section className="section">
         <div className="container">
           <h2>Сравнение с другими решениями</h2>
           <table className="compare-table">
@@ -159,7 +163,7 @@ export default function HomePage() {
           </p>
         </div>
       </section>
-      <section className="section">
+      <section className="section section-alt">
         <div className="container">
           <h2>Продукция</h2>
           <div className="cards">
@@ -175,7 +179,7 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-      <section className="section section-alt">
+      <section className="section">
         <div className="container">
           <h2>Реализованные объекты</h2>
           <div className="cards">

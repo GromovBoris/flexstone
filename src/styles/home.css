@@ -3,8 +3,6 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
-  max-width: 1180px;
-  margin: 3rem auto 0;
 
   .stat {
     background: var(--surface);
@@ -147,13 +145,11 @@
 @media (max-width: 900px) {
   .stats {
     grid-template-columns: repeat(2, 1fr);
-    margin-top: 1.5rem;
   }
 }
 
 @media (max-width: 520px) {
-  .compare-table {
-    display: block;
-    overflow-x: auto;
+  .stats {
+    grid-template-columns: 1fr;
   }
 }
