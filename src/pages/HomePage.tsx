@@ -91,8 +91,8 @@ export default function HomePage() {
       <section className="hero">
         <h1>Фасадные термопанели Flexstone: утепление и отделка в один этап</h1>
         <p className="hero-sub">
-          Фасад или цоколь 100 м² за 1–3 дня. Монтаж до −10 °C, срок службы
-          более 30 лет, гарантия на материал — 5 лет.
+          Фасад или цоколь 100 м² за 1–3 дня, монтаж до −10 °C, <br />
+          срок службы более 30 лет, гарантия на материал 5 лет.
         </p>
         <div className="hero-actions">
           <a href={COMPANY.phoneHref} className="btn">

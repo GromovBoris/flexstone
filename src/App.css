@@ -150,10 +150,18 @@ a {
 .hero {
   background:
     linear-gradient(rgba(34, 30, 26, 0.55), rgba(34, 30, 26, 0.55)),
-    url("/hero.jpg") center / cover no-repeat; /* фото поставим из VK */
+    url("/img/hero.jpg") center / cover no-repeat;
   color: #fff;
   text-align: center;
   padding: 6rem 1rem;
+  border-radius: var(--radius);
+  overflow: hidden;
+
+  h1 {
+    text-align: center;
+    margin-inline: auto;
+    max-width: 100%;
+  }
 
   .hero-sub {
     font-size: 1.15rem;
@@ -166,6 +174,26 @@ a {
     gap: 1rem;
     justify-content: center;
     flex-wrap: wrap;
+
+    a,
+    button {
+      background: transparent;
+      color: #fff;
+      border: 2px solid #fff;
+      box-shadow: none;
+      min-width: 220px;
+      text-align: center;
+      transition:
+        transform 0.25s ease,
+        background 0.25s ease;
+
+      &:hover {
+        background: rgba(255, 255, 255, 0.15);
+        color: #fff;
+        border-color: #fff;
+        /* transform: scale(1.02); */
+      }
+    }
   }
 }
 
