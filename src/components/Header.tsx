@@ -1,11 +1,12 @@
 import { Link, NavLink } from "react-router-dom";
-
-const PHONE = "+7 (XXX) XXX-XX-XX"; // ← телефон заказчика
+import { COMPANY } from "../data/company";
 
 const links = [
   { to: "/", label: "Главная" },
+  { to: "/products", label: "Продукция" },
   { to: "/colors", label: "Цвета" },
-  { to: "/about", label: "О компании" },
+  { to: "/projects", label: "Объекты" },
+  { to: "/cooperation", label: "Сотрудничество" },
   { to: "/contacts", label: "Контакты" },
 ];
 
@@ -13,8 +14,7 @@ export default function Header() {
   return (
     <header className="header">
       <Link to="/" className="logo">
-        {/* логотип заказчика */}
-        <span>FST КЛИНКЕР</span>
+        <span>Флекстоун76</span>
       </Link>
       <nav className="nav">
         {links.map((l) => (
@@ -23,8 +23,8 @@ export default function Header() {
           </NavLink>
         ))}
       </nav>
-      <a href={`tel:${PHONE.replace(/[^+\d]/g, "")}`} className="phone">
-        {PHONE}
+      <a href={COMPANY.phoneHref} className="header-phone">
+        {COMPANY.phone}
       </a>
     </header>
   );
