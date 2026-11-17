@@ -3,10 +3,8 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
-  padding: 2rem 1rem;
   max-width: 1180px;
   margin: 3rem auto 0;
-  position: relative;
 
   .stat {
     background: var(--surface);
@@ -124,7 +122,6 @@
   background: var(--accent);
   color: #fff;
   text-align: center;
-  padding: 2.5rem 1rem;
 
   .btn-outline {
     color: #fff;

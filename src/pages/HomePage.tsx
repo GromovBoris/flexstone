@@ -131,7 +131,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="section">
+      <section className="section section-alt">
         <div className="container">
           <h2>Сравнение с другими решениями</h2>
           <table className="compare-table">
@@ -178,7 +178,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="section">
+      <section className="section section-alt">
         <div className="container">
           <h2>Реализованные объекты</h2>
           <div className="cards">
@@ -192,7 +192,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="cta">
+      <section className="section cta">
         <h2>Привезём образцы панелей на ваш объект</h2>
         <p>Расчёт под ваш проект — в течение 2 дней.</p>
         <div className="hero-actions">

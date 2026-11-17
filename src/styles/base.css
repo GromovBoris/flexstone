@@ -9,6 +9,7 @@
   --border: #e3e0da;
   --radius: 10px;
   --shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  --bg-alt: #f5f3f0;
 }
 
 * {
@@ -64,11 +65,16 @@ a {
 }
 
 .section {
-  padding: 3rem 0;
+  padding: 4rem 0;
+  background: var(--surface);
 
   & > .container > h2 {
     text-align: center;
   }
+}
+
+.section-alt {
+  background: var(--bg-alt);
 }
 
 .btn {
