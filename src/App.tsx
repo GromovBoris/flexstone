@@ -5,6 +5,9 @@ import HomePage from "./pages/HomePage";
 import ColorsPage from "./pages/ColorsPage";
 import AboutPage from "./pages/AboutPage";
 import ContactsPage from "./pages/ContactsPage";
+import ProductsPage from "./pages/ProductsPage";
+import ProjectsPage from "./pages/ProjectsPage";
+import CooperationPage from "./pages/CooperationPage";
 
 function Layout() {
   return (
@@ -26,6 +29,9 @@ export default function App() {
         <Route path="/colors" element={<ColorsPage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/contacts" element={<ContactsPage />} />
+        <Route path="/products" element={<ProductsPage />} />
+        <Route path="/projects" element={<ProjectsPage />} />
+        <Route path="/cooperation" element={<CooperationPage />} />
       </Route>
     </Routes>
   );
