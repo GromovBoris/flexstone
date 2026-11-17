@@ -88,26 +88,27 @@ const projects = [
 export default function HomePage() {
   return (
     <>
-      <div className="container">
-        <section className="hero">
-          <h1>
-            Фасадные термопанели Flexstone: утепление и отделка в один этап
-          </h1>
-          <p className="hero-sub">
-            Фасад или цоколь 100 м² за 1–3 дня, монтаж до −10 °C, <br />
-            срок службы более 30 лет, гарантия на материал 5 лет.
-          </p>
-          <div className="hero-actions">
-            <a href={COMPANY.phoneHref} className="btn">
-              Рассчитать стоимость
-            </a>
-            <Link to="/projects" className="btn btn-outline">
-              Смотреть объекты
-            </Link>
-          </div>
-        </section>{" "}
-      </div>
-
+      {/* <div className="container"> */}
+      <section className="hero">
+        <h1>
+          Фасадные термопанели Flexstone:
+          <br className="br-lg" /> утепление и отделка в один этап
+        </h1>
+        <p className="hero-sub">
+          Фасад или цоколь 100 м² за 1–3 дня, монтаж до −10 °C.{" "}
+          <br className="br-lg" />
+          Срок службы более 30 лет, гарантия на материал 5 лет.
+        </p>
+        <div className="hero-actions">
+          <a href={COMPANY.phoneHref} className="btn">
+            Рассчитать стоимость
+          </a>
+          <Link to="/projects" className="btn btn-outline">
+            Смотреть объекты
+          </Link>
+        </div>
+      </section>{" "}
+      {/* </div> */}
       <section className="stats">
         {stats.map((s) => (
           <div className="stat" key={s.label}>
@@ -116,7 +117,6 @@ export default function HomePage() {
           </div>
         ))}
       </section>
-
       <section className="section">
         <div className="container">
           <h2>Почему термопанели</h2>
@@ -130,7 +130,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
       <section className="section section-alt">
         <div className="container">
           <h2>Сравнение с другими решениями</h2>
@@ -160,7 +159,6 @@ export default function HomePage() {
           </p>
         </div>
       </section>
-
       <section className="section">
         <div className="container">
           <h2>Продукция</h2>
@@ -177,7 +175,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
       <section className="section section-alt">
         <div className="container">
           <h2>Реализованные объекты</h2>
@@ -191,22 +188,29 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
       <section className="section cta">
-        <h2>Привезём образцы панелей на ваш объект</h2>
-        <p>Расчёт под ваш проект — в течение 2 дней.</p>
-        <div className="hero-actions">
-          <a href={COMPANY.phoneHref} className="btn">
-            {COMPANY.phone}
-          </a>
-          <a
-            href={COMPANY.vk}
-            target="_blank"
-            rel="noreferrer"
-            className="btn btn-outline"
-          >
-            Написать в VK
-          </a>
+        <div className="container">
+          <h2>
+            Привезём образцы панелей <br className="br-lg" /> на ваш объект
+          </h2>
+          <p className="hero-sub">
+            Расчёт в течение 2 дней, образцы и замер бесплатно.{" "}
+            <br className="br-lg" />
+            Работаем по договору, гарантия на материал 5 лет.
+          </p>
+          <div className="hero-actions">
+            <a href={COMPANY.phoneHref} className="btn btn-outline">
+              Позвонить
+            </a>
+            <a
+              href={COMPANY.vk}
+              target="_blank"
+              rel="noreferrer"
+              className="btn btn-outline"
+            >
+              Написать в VK
+            </a>
+          </div>
         </div>
       </section>
     </>

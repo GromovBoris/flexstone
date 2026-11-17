@@ -6,7 +6,7 @@
   color: #fff;
   text-align: center;
   padding: 6rem 1rem;
-  border-radius: var(--radius);
+  /* border-radius: var(--radius); */
   overflow: hidden;
 
   h1 {
@@ -15,11 +15,11 @@
     max-width: 100%;
   }
 
-  .hero-sub {
+  /* .hero-sub {
     font-size: 1.15rem;
     max-width: 640px;
     margin: 0 auto 2rem;
-  }
+  } */
 
   .hero-actions {
     display: flex;
@@ -43,7 +43,7 @@
         background: rgba(255, 255, 255, 0.15);
         color: #fff;
         border-color: #fff;
-        transform: scale(1.1);
+        /* transform: scale(1.1); */
       }
     }
   }
@@ -51,6 +51,6 @@
 
 @media (max-width: 520px) {
   .hero {
-    padding: 4rem 1rem;
+    padding: 4rem 0rem;
   }
 }
