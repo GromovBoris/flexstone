@@ -8,6 +8,7 @@ import ContactsPage from "./pages/ContactsPage";
 import ProductsPage from "./pages/ProductsPage";
 import ProjectsPage from "./pages/ProjectsPage";
 import CooperationPage from "./pages/CooperationPage";
+import "./App.css";
 
 function Layout() {
   return (

@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { COMPANY } from "../data/company";
 import { PRODUCTS } from "../data/products";
-import "./HomePage.css"; // если стили держишь в App.css — эту строку убери
 
 const stats = [
   { value: "30+", label: "лет службы фасада" },
