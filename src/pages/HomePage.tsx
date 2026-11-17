@@ -88,21 +88,25 @@ const projects = [
 export default function HomePage() {
   return (
     <>
-      <section className="hero">
-        <h1>Фасадные термопанели Flexstone: утепление и отделка в один этап</h1>
-        <p className="hero-sub">
-          Фасад или цоколь 100 м² за 1–3 дня, монтаж до −10 °C, <br />
-          срок службы более 30 лет, гарантия на материал 5 лет.
-        </p>
-        <div className="hero-actions">
-          <a href={COMPANY.phoneHref} className="btn">
-            Рассчитать стоимость
-          </a>
-          <Link to="/projects" className="btn btn-outline">
-            Смотреть объекты
-          </Link>
-        </div>
-      </section>
+      <div className="container">
+        <section className="hero">
+          <h1>
+            Фасадные термопанели Flexstone: утепление и отделка в один этап
+          </h1>
+          <p className="hero-sub">
+            Фасад или цоколь 100 м² за 1–3 дня, монтаж до −10 °C, <br />
+            срок службы более 30 лет, гарантия на материал 5 лет.
+          </p>
+          <div className="hero-actions">
+            <a href={COMPANY.phoneHref} className="btn">
+              Рассчитать стоимость
+            </a>
+            <Link to="/projects" className="btn btn-outline">
+              Смотреть объекты
+            </Link>
+          </div>
+        </section>{" "}
+      </div>
 
       <section className="stats">
         {stats.map((s) => (

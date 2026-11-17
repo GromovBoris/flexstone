@@ -8,7 +8,12 @@ import ContactsPage from "./pages/ContactsPage";
 import ProductsPage from "./pages/ProductsPage";
 import ProjectsPage from "./pages/ProjectsPage";
 import CooperationPage from "./pages/CooperationPage";
-import "./App.css";
+
+import "./styles/base.css";
+import "./styles/header.css";
+import "./styles/hero.css";
+import "./styles/home.css";
+import "./styles/footer.css";
 
 function Layout() {
   return (

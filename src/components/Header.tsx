@@ -1,7 +1,6 @@
-import { Link, NavLink } from "react-router-dom";
-import { COMPANY } from "../data/company";
+import { useState } from "react";
 
-const links = [
+const LINKS = [
   { to: "/", label: "Главная" },
   { to: "/products", label: "Продукция" },
   { to: "/colors", label: "Цвета" },
@@ -11,21 +10,35 @@ const links = [
 ];
 
 export default function Header() {
+  const [open, setOpen] = useState(false);
+
   return (
     <header className="header">
-      <Link to="/" className="logo">
-        <span>Флекстоун76</span>
-      </Link>
-      <nav className="nav">
-        {links.map((l) => (
-          <NavLink key={l.to} to={l.to} end={l.to === "/"}>
-            {l.label}
-          </NavLink>
-        ))}
-      </nav>
-      <a href={COMPANY.phoneHref} className="header-phone">
-        {COMPANY.phone}
-      </a>
+      <div className="container header-inner">
+        <a href="/" className="logo">
+          Flexstone<span>76</span>
+        </a>
+
+        <nav className={`nav ${open ? "nav-open" : ""}`}>
+          {LINKS.map((l) => (
+            <a key={l.to} href={l.to} onClick={() => setOpen(false)}>
+              {l.label}
+            </a>
+          ))}
+        </nav>
+
+        <a href="tel:+79619739919" className="header-phone">
+          +7 (961) 973-99-19
+        </a>
+
+        <button
+          className="burger"
+          aria-label="Открыть меню"
+          onClick={() => setOpen(!open)}
+        >
+          {open ? "✕" : "☰"}
+        </button>
+      </div>
     </header>
   );
 }
