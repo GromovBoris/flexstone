@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const LINKS = [
   { to: "/", label: "Главная" },
@@ -15,9 +16,9 @@ export default function Header() {
   return (
     <header className="header">
       <div className="container header-inner">
-        <a href="/" className="logo">
-          Flexstone<span>76</span>
-        </a>
+        <Link to="/" className="logo">
+          <img src="./img/logo.jpg" alt="Flexstone76 — фасадные термопанели" />
+        </Link>
 
         <nav className={`nav ${open ? "nav-open" : ""}`}>
           {LINKS.map((l) => (
